@@ -1,0 +1,12 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/kyosu-1/flash-function/proto
+plugins:
+  - name: es
+    out: ./front/src/proto
+    opt: target=ts
+  - name: connect-web
+    out: ./front/src/proto
+    opt: target=ts
